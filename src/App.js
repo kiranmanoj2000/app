@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 
+import './components/HomePage'
+import HomePage from './components/HomePage';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p> Init commit. 
-        </p>
+        <HomePage/>
       
       </header>
     </div>
