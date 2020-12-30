@@ -1,6 +1,5 @@
-import { render } from '@testing-library/react';
 import React from 'react';
-
+import SocialShare from './SocialShare'
 class HomePage extends React.Component {
     constructor(props){
         super(props)
@@ -10,7 +9,6 @@ class HomePage extends React.Component {
     }
 
     componentDidMount(){
-        let self = this
         setInterval(()=>{
             this.setState({
                 time: this.state.time + 1
@@ -20,7 +18,8 @@ class HomePage extends React.Component {
     render() {
         return (
             <> 
-                <b>{this.state.time} seconds </b>
+                <SocialShare/>
+                
             </>
         )
     }

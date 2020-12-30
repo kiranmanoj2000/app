@@ -1,0 +1,8 @@
+.socials-row{
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    margin-right: 10px;
+}
