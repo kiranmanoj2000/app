@@ -7,10 +7,9 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import MenuItem from '@material-ui/core/MenuItem';
 import SocialShare from './SocialShare'
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import Experience from './Experience'
+
+
 import {
     BrowserRouter as Router,
     Switch,
@@ -38,6 +37,12 @@ class NavBar extends React.Component {
                             </div>
 
                             <div className='menu-item'>
+                                <Link style={{ textDecoration: 'none', color: 'white' }} to="/app/experience">
+                                    <MenuItem>Experience</MenuItem>
+                                </Link>
+                            </div>
+
+                            <div className='menu-item'>
                                 <Link style={{ textDecoration: 'none', color: 'white' }} to="/app/projects">
                                     <MenuItem>Projects</MenuItem>
                                 </Link>
@@ -59,13 +64,18 @@ class NavBar extends React.Component {
                 <Route path="/app/projects">
                             <Projects/>
                         </Route>
+                        <Route path="/app/experience">
+                            <Experience/>
+                        </Route>
                 <Route path="/app/contact">
                             <Contact/>
                 </Route>
                         <Route path="/app">
                             <HomePage/>
                         </Route>
-          
+
+                        
+
                         
                         
                 </Switch>
