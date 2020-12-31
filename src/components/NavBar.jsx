@@ -15,7 +15,8 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
+    
 } from "react-router-dom";
 import HomePage from './HomePage';
 class NavBar extends React.Component {
