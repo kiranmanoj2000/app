@@ -28,6 +28,7 @@ class SocialShare extends React.Component {
                 <div className='socials-row'>
                     <div className='social-icon'>
                         <EmailShareButton 
+                            subject="Take a look at Kiran's website"
                             children={<EmailIcon size={32} round={true}/>} 
                             url={this.state.currentURL}
                         />

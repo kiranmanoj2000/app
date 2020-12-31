@@ -1,0 +1,17 @@
+.navbar-contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-items {
+    display: flex;
+
+}
+
+.menu-item {
+    margin-right: 40px;
+}
+
+.footer {
+    text-align: center;
+}
