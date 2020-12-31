@@ -32,19 +32,19 @@ class NavBar extends React.Component {
                     <Toolbar className='navbar-contents'>
                         <div className='menu-items'>
                             <div className='menu-item'>
-                                <Link style={{ textDecoration: 'none', color: 'white' }} to="/">
+                                <Link style={{ textDecoration: 'none', color: 'white' }} to="/app">
                                     <MenuItem>Home</MenuItem>
                                 </Link>
                             </div>
 
                             <div className='menu-item'>
-                                <Link style={{ textDecoration: 'none', color: 'white' }} to="/projects">
+                                <Link style={{ textDecoration: 'none', color: 'white' }} to="/app/projects">
                                     <MenuItem>Projects</MenuItem>
                                 </Link>
                             </div>
 
                             <div className='menu-item'>
-                                <Link  style={{ textDecoration: 'none', color: 'white' }} to="/contact">
+                                <Link  style={{ textDecoration: 'none', color: 'white' }} to="/app/contact">
                                     <MenuItem>Contact</MenuItem>
                                 </Link>
                             </div>
@@ -56,13 +56,13 @@ class NavBar extends React.Component {
                 </AppBar>
                 
                 <Switch>
-                <Route path="/projects">
+                <Route path="/app/projects">
                             <Projects/>
                         </Route>
-                <Route path="/contact">
+                <Route path="/app/contact">
                             <Contact/>
                 </Route>
-                        <Route path="/">
+                        <Route path="/app">
                             <HomePage/>
                         </Route>
           
