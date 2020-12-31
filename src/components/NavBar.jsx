@@ -15,7 +15,9 @@ import {
     Switch,
     Route,
     Link,
-    
+    withRouter,
+    useHistory
+
 } from "react-router-dom";
 import HomePage from './HomePage';
 class NavBar extends React.Component {
@@ -23,10 +25,17 @@ class NavBar extends React.Component {
         super(props)
     }
 
+    componentDidMount() {
+        window.addEventListener('popstate', function (event) {
+            alert('hi')
+        });
+        
+    }
+
     render() {
         return (
 
-            <Router>
+            
                 <AppBar position="static">
                     <Toolbar className='navbar-contents'>
                         <div className='menu-items'>
@@ -49,43 +58,15 @@ class NavBar extends React.Component {
                             </div>
 
                             <div className='menu-item'>
-                                <Link  style={{ textDecoration: 'none', color: 'white' }} to="/app/contact">
+                                <Link style={{ textDecoration: 'none', color: 'white' }} to="/app/contact">
                                     <MenuItem>Contact</MenuItem>
                                 </Link>
                             </div>
                         </div>
-                        
-                        
-
                     </Toolbar>
                 </AppBar>
-                
-                <Switch>
-                <Route path="/app/projects">
-                            <Projects/>
-                        </Route>
-                        <Route path="/app/experience">
-                            <Experience/>
-                        </Route>
-                <Route path="/app/contact">
-                            <Contact/>
-                </Route>
-                        <Route path="/app">
-                            <HomePage/>
-                        </Route>
 
-                        
-
-                        
-                        
-                </Switch>
-
-            <div className='footer'>
-                <SocialShare/>
-            </div>
             
-        </Router>
-
 
 
         )

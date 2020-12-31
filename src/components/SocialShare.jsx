@@ -17,9 +17,6 @@ import {
 class SocialShare extends React.Component {
     constructor(props){
         super(props);
-        this.state = {
-            currentURL: window.location.href
-        }
     }
 
     render(){
@@ -30,31 +27,31 @@ class SocialShare extends React.Component {
                         <EmailShareButton 
                             subject="Take a look at Kiran's website"
                             children={<EmailIcon size={32} round={true}/>} 
-                            url={this.state.currentURL}
+                            url={this.props.url}
                         />
                     </div>
                     <div className='social-icon'>
                         <FacebookShareButton 
                             children={<FacebookIcon size={32} round={true}/>} 
-                            url={this.state.currentURL}
+                            url={this.props.url}
                         />
                     </div>
                     <div className='social-icon'>
                         <TwitterShareButton 
                             children={<TwitterIcon size={32} round={true}/>} 
-                            url={this.state.currentURL}
+                            url={this.props.url}
                         />
                     </div>
                     <div className='social-icon'>
                         <LinkedinShareButton 
                             children={<LinkedinIcon size={32} round={true}/>} 
-                            url={this.state.currentURL}
+                            url={this.props.url}
                         />
                     </div>
                     <div className='social-icon'>
                         <WhatsappShareButton 
                             children={<WhatsappIcon size={32} round={true}/>} 
-                            url={this.state.currentURL}
+                            url={this.props.url}
                         />
                     </div>
                 </div>
