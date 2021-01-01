@@ -24,9 +24,11 @@ import {
 } from "react-router-dom";
 
 import Experience from './components/Experience'
-
+import ReactGA from 'react-ga';
+import { createBrowserHistory } from 'history';
 class App extends React.Component {
-  componentWillMount() {
+  constructor(props) {
+    super(props)
     this.state = {
       url: window.location.href
     }
@@ -35,11 +37,19 @@ class App extends React.Component {
         url: window.location.href
       })
     });
+    
+    
   }
+
+
 
   componentWillUnmount() {
     this.unlisten();
 }
+
+  isDev = () => {
+    return (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') 
+  }
 
   render(){
     

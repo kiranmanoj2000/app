@@ -11,11 +11,24 @@ import {
   withRouter,
   useHistory
 } from "react-router-dom";
+
+import Analytics from 'react-router-ga';
 ReactDOM.render(
   <React.StrictMode>
+    {process.env.NODE_ENV === "production" ?
+    <Analytics id="G-6282HS6YN5S" debug>
+      <Router>
+      <App />
+    </Router>
+    </Analytics>
+    :
     <Router>
       <App />
     </Router>
+    }
+    
+    
+    
     
   </React.StrictMode>,
   document.getElementById('root')
