@@ -16,11 +16,13 @@ import Analytics from 'react-router-ga';
 ReactDOM.render(
   <React.StrictMode>
     {process.env.NODE_ENV === "production" ?
+    <Router>
     <Analytics id="G-6282HS6YN5S" debug>
-      <Router>
+      
       <App />
-    </Router>
+    
     </Analytics>
+    </Router>
     :
     <Router>
       <App />
