@@ -4,7 +4,16 @@ import Contact from './components/Contact'
 import Projects from './components/Projects'
 import HomePage from './components/HomePage';
 import SocialShare from './components/SocialShare';
-import NavBar from './components/NavBar';
+import BrowserNavBar from './components/BrowserNavBar';
+import MobileNavBar from './components/MobileNavBar';
+
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect";
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -36,7 +45,14 @@ class App extends React.Component {
     
     return (
     <div className="App">
-      <NavBar />
+      {/* Mobile or not*/}
+      <BrowserView>
+        <BrowserNavBar />
+      </BrowserView>
+      
+      <MobileView>
+          <MobileNavBar/>
+    </MobileView>
 
       <Switch>
         <Route path="/app/projects">

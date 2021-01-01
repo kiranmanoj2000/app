@@ -1,41 +1,23 @@
 import React from 'react';
 
-import Contact from './Contact'
-import Projects from './Projects'
-import './NavBar.css'
+import './BrowserNavBar.css'
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import MenuItem from '@material-ui/core/MenuItem';
-import SocialShare from './SocialShare'
-import Experience from './Experience'
+
 
 
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link,
-    withRouter,
-    useHistory
-
 } from "react-router-dom";
-import HomePage from './HomePage';
-class NavBar extends React.Component {
+
+class BrowserNavBar extends React.Component {
     constructor(props) {
         super(props)
     }
 
-    componentDidMount() {
-        window.addEventListener('popstate', function (event) {
-            alert('hi')
-        });
-        
-    }
-
     render() {
         return (
-
-            
                 <AppBar position="static">
                     <Toolbar className='navbar-contents'>
                         <div className='menu-items'>
@@ -73,4 +55,4 @@ class NavBar extends React.Component {
     }
 }
 
-export default NavBar;
+export default BrowserNavBar;
