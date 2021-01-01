@@ -1,0 +1,2 @@
+export const EXPERIENCE_TITLE = "Experience"
+export const EXPERIENCE_DESCRIPTION = "In the past I've worked with some amazing companies and people developing software. Here's some of the positions I've worked."

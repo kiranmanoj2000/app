@@ -10,22 +10,16 @@ import MobileNavBar from './components/MobileNavBar';
 import {
   BrowserView,
   MobileView,
-  isBrowser,
-  isMobile
 } from "react-device-detect";
 
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   withRouter,
-  useHistory
 } from "react-router-dom";
 
 import Experience from './components/Experience'
-import ReactGA from 'react-ga';
-import { createBrowserHistory } from 'history';
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -63,6 +57,8 @@ class App extends React.Component {
       <MobileView>
           <MobileNavBar/>
     </MobileView>
+    
+    <div className='content-container'>
 
       <Switch>
         <Route path="/app/projects">
@@ -78,6 +74,8 @@ class App extends React.Component {
           <HomePage />
         </Route>
       </Switch>
+    </div>
+      
 
       <div className='footer'>
         <SocialShare url={this.state.url}/>

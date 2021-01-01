@@ -1,4 +1,6 @@
 import React from 'react';
+import PageHeading from './PageHeading'
+import {HOMEPAGE_FIRST_PARAGRAPH} from '../constants/Home/index'
 class HomePage extends React.Component {
     constructor(props){
         super(props)
@@ -10,9 +12,7 @@ class HomePage extends React.Component {
         return (
             <> 
                 
-                <h1>
-                    Home
-                </h1>
+                    <PageHeading heading='Home' description={HOMEPAGE_FIRST_PARAGRAPH}/>
             </>
         )
     }
