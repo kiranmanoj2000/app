@@ -17,7 +17,7 @@ ReactDOM.render(
   <React.StrictMode>
     {process.env.NODE_ENV === "production" ?
     <Router>
-    <Analytics id="G-6282HS6YN5S" debug>
+    <Analytics id="G-4SD9QMMS6F" debug>
       
       <App />
     
