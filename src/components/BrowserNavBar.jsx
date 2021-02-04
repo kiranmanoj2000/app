@@ -40,9 +40,10 @@ class BrowserNavBar extends React.Component {
                             </div>
 
                             <div className='menu-item'>
-                                <Link style={{ textDecoration: 'none', color: 'white' }} to="/files/KiranManojKumarResume.pdf" target="_blank" download>
-                                    <MenuItem>Resume</MenuItem>
-                                </Link>
+                            <a style={{ textDecoration: 'none', color: 'white' }} href="/files/KiranManojKumarResume.pdf" download><MenuItem>Resume</MenuItem></a>
+                                {/* <Link style={{ textDecoration: 'none', color: 'white' }} to="/files/KiranManojKumarResume.pdf" target="_blank" download>
+                                    
+                                </Link> */}
                             </div>
 
                             
