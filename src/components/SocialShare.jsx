@@ -20,6 +20,8 @@ import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import copy from 'copy-to-clipboard';
 import FileCopyOutlinedIcon from '@material-ui/icons/FileCopyOutlined';
+import {ICON_SIZE} from "../constants/Socials/index"
+
 class SocialShare extends React.Component {
     constructor(props) {
         super(props);
@@ -54,41 +56,40 @@ class SocialShare extends React.Component {
                     <div className='social-icon'>
                         <EmailShareButton
                             subject="Take a look at Kiran's website"
-                            children={<EmailIcon size={32} round={true} />}
+                            children={<EmailIcon size={ICON_SIZE} round={true} />}
                             url={this.props.url}
                         />
                     </div>
                     <div className='social-icon'>
                         <FacebookShareButton
-                            children={<FacebookIcon size={32} round={true} />}
+                            children={<FacebookIcon size={ICON_SIZE} round={true} />}
                             url={this.props.url}
                         />
                     </div>
                     <div className='social-icon'>
                         <TwitterShareButton
-                            children={<TwitterIcon size={32} round={true} />}
+                            children={<TwitterIcon size={ICON_SIZE} round={true} />}
                             url={this.props.url}
                         />
                     </div>
                     <div className='social-icon'>
                         <LinkedinShareButton
-                            children={<LinkedinIcon size={32} round={true} />}
+                            children={<LinkedinIcon size={ICON_SIZE} round={true} />}
                             url={this.props.url}
                         />
                     </div>
                     <div className='social-icon'>
                         <WhatsappShareButton
-                            children={<WhatsappIcon size={32} round={true} />}
+                            children={<WhatsappIcon size={ICON_SIZE} round={true} />}
                             url={this.props.url}
                         />
                     </div>
+                
                 </div>
 
                 <div>
                     Share this page!
                 </div>
-
-
 
                 <Snackbar
                     anchorOrigin={{

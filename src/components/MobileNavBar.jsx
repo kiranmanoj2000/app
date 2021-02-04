@@ -20,6 +20,7 @@ import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
 import ContactsIcon from '@material-ui/icons/Contacts';
 import BuildIcon from '@material-ui/icons/Build';
 import ContactSupportIcon from '@material-ui/icons/ContactSupport';
+import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 import {
     Link,
 } from "react-router-dom";
@@ -31,48 +32,60 @@ class MobileNavBar extends React.Component {
         }
     }
 
-    handleDrawerClose = ()=>{
+    handleDrawerClose = () => {
         this.setState({
             mobileNavBarOpen: false
         })
     }
 
     mobileMenuItems = () => {
-        return(
-            <> 
+        return (
+            <>
                 <ListItem onClick={this.handleDrawerClose} button key='Home'>
                     <ListItemIcon>
-                        <HomeIcon/>
+                        <HomeIcon />
                     </ListItemIcon>
-                    <ListItemText 
-                        primary={<Link style={{ textDecoration: 'none', color: 'black'}} to="/app">Home</Link>} 
+                    <ListItemText
+                        primary={<Link style={{ textDecoration: 'none', color: 'black' }} to="/app">Home</Link>}
                     />
                 </ListItem>
 
                 <ListItem onClick={this.handleDrawerClose} button key='Experience'>
                     <ListItemIcon>
-                        <BuildIcon/>
+                        <BuildIcon />
                     </ListItemIcon>
                     <ListItemText
-                        primary={<Link style={{ textDecoration: 'none', color: 'black'}} to="/app/experience">Experience</Link>} 
+                        primary={<Link style={{ textDecoration: 'none', color: 'black' }} to="/app/experience">Experience</Link>}
                     />
                 </ListItem>
 
                 <ListItem onClick={this.handleDrawerClose} button key='Projects'>
                     <ListItemIcon>
-                        <EmojiObjectsIcon/>
+                        <EmojiObjectsIcon />
                     </ListItemIcon>
                     <ListItemText
-                        primary={<Link style={{ textDecoration: 'none', color: 'black'}} to="/app/projects">Projects</Link>} 
+                        primary={<Link style={{ textDecoration: 'none', color: 'black' }} to="/app/projects">Projects</Link>}
+                    />
+                </ListItem>
+                
+
+                <ListItem onClick={this.handleDrawerClose} button key='Resume'>
+                    <ListItemIcon>
+                        <InsertDriveFileIcon />
+                    </ListItemIcon>
+                    <ListItemText
+                        primary={<Link style={{ textDecoration: 'none', color: 'black' }} to="/files/KiranManojKumarResume.pdf" target="_blank" download>
+                                    Resume
+                                </Link>}
                     />
                 </ListItem>
 
                 <ListItem onClick={this.handleDrawerClose} button key='Contact'>
                     <ListItemIcon>
-                        <ContactSupportIcon/>
+                        <ContactSupportIcon />
                     </ListItemIcon>
                     <ListItemText
-                        primary={<Link style={{ textDecoration: 'none', color: 'black'}} to="/app/contact">Contact</Link>} 
+                        primary={<Link style={{ textDecoration: 'none', color: 'black' }} to="/app/contact">Contact</Link>}
                     />
                 </ListItem>
 
@@ -93,8 +106,8 @@ class MobileNavBar extends React.Component {
                 <SwipeableDrawer
                     anchor={'left'}
                     open={this.state.mobileNavBarOpen}
-                    onClose={()=>{this.setState({ mobileNavBarOpen: false })}}
-                    onOpen={()=>{this.setState({ mobileNavBarOpen: true })}}
+                    onClose={() => { this.setState({ mobileNavBarOpen: false }) }}
+                    onOpen={() => { this.setState({ mobileNavBarOpen: true }) }}
                 >
                     <div>
                         {this.mobileMenuItems()}
