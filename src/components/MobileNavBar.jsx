@@ -74,9 +74,7 @@ class MobileNavBar extends React.Component {
                         <InsertDriveFileIcon />
                     </ListItemIcon>
                     <ListItemText
-                        primary={<Link style={{ textDecoration: 'none', color: 'black' }} to="/files/KiranManojKumarResume.pdf" target="_blank" download>
-                                    Resume
-                                </Link>}
+                        primary={<a style={{ textDecoration: 'none', color: 'black' }} href="files/KiranManojKumarResume.pdf" download>Resume</a>}
                     />
                 </ListItem>
 
