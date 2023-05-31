@@ -8,11 +8,12 @@ export default class PageHeading extends React.Component {
                 <Typography variant='h2'>
                     {this.props.heading}
                 </Typography>
-                <div className='description'>
+                {this.props.description && <div className='description'>
                 <Typography variant='h6'>
                     {this.props.description}
                 </Typography>
-                </div>
+                </div>}
+                
 
             </>
         )

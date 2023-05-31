@@ -4,6 +4,10 @@ import {HOMEPAGE_FIRST_PARAGRAPH} from '../constants/Home/index'
 import Cookies from 'universal-cookie';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button'
+
+
+
+
 const cookies = new Cookies();
 class HomePage extends React.Component {
     
@@ -24,13 +28,10 @@ class HomePage extends React.Component {
     render() {
         return (
             <> 
-                
-                    <PageHeading heading='Home' description={HOMEPAGE_FIRST_PARAGRAPH}/>
 
-        {/* <TextField id="filled-basic" value={this.state.cookieValue} onChange={(e)=>{this.setState({cookieValue: e.target.value})}} label="Value" variant="filled"/>
-        <Button variant="contained" onClick={this.saveCookie} color="primary" >
-            Save
-        </Button> */}
+                    <PageHeading heading='Home' description={HOMEPAGE_FIRST_PARAGRAPH}/>
+                    
+        
 
                     
             </>

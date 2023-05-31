@@ -20,6 +20,9 @@ import {
 
 import Experience from './components/Experience'
 
+import logo from './logo.svg';
+import './App.css';
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -48,39 +51,49 @@ class App extends React.Component {
   render(){
     
     return (
-    <div className="App">
-      {/* Mobile or not*/}
-      <BrowserView>
-        <BrowserNavBar />
-      </BrowserView>
+
+      <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+           <code>This site is under development and will be updated soon!</code>
+        </p>
+        
+      </header>
+    </div>
+    // <div className="App">
+    //   {/* Mobile or not*/}
+    //   <BrowserView>
+    //     <BrowserNavBar />
+    //   </BrowserView>
       
-      <MobileView>
-          <MobileNavBar/>
-    </MobileView>
+    //   <MobileView>
+    //       <MobileNavBar/>
+    // </MobileView>
     
-    <div className='content-container'>
+    // <div className='content-container'>
 
-      <Switch>
-        <Route path="/app/projects">
-          <Projects />
-        </Route>
-        <Route path="/app/experience">
-          <Experience />
-        </Route>
-        <Route path="/app/contact">
-          <Contact />
-        </Route>
-        <Route path="/app">
-          <HomePage />
-        </Route>
-      </Switch>
-    </div>
+    //   <Switch>
+    //     <Route path="/app/projects">
+    //       <Projects />
+    //     </Route>
+    //     <Route path="/app/experience">
+    //       <Experience />
+    //     </Route>
+    //     <Route path="/app/contact">
+    //       <Contact />
+    //     </Route>
+    //     <Route path="/app">
+    //       <HomePage />
+    //     </Route>
+    //   </Switch>
+    // </div>
       
 
-      <div className='footer'>
-        <SocialShare url={this.state.url}/>
-      </div>
-    </div>
+    //   <div className='footer'>
+    //     <SocialShare url={this.state.url}/>
+    //   </div>
+    // </div>
   );
     }
 }
