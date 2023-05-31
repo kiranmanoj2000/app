@@ -1,1 +1,0 @@
-export const HOMEPAGE_FIRST_PARAGRAPH = "Hi, my name's Kiran Manoj Kumar and I'm a 3rd year Mechatronics Engineering student at the University of Waterloo. I am passionate in backend software engineering and product managment."

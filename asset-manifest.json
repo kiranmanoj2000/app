@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/app/static/css/main.40d8daf6.chunk.css",
+    "main.js": "/app/static/js/main.bb7c80a6.chunk.js",
+    "runtime-main.js": "/app/static/js/runtime-main.a3358274.js",
+    "static/js/2.b9773a32.chunk.js": "/app/static/js/2.b9773a32.chunk.js",
+    "static/js/3.8384197e.chunk.js": "/app/static/js/3.8384197e.chunk.js",
+    "index.html": "/app/index.html",
+    "static/js/2.b9773a32.chunk.js.LICENSE.txt": "/app/static/js/2.b9773a32.chunk.js.LICENSE.txt",
+    "static/media/Oracle_NetSuite_2021.a52e9867.png": "/app/static/media/Oracle_NetSuite_2021.a52e9867.png",
+    "static/media/Rombald+Logo.9d0b3899.png": "/app/static/media/Rombald+Logo.9d0b3899.png",
+    "static/media/Royal_Canadian_Air_Force_Badge.svg.e36b4738.png": "/app/static/media/Royal_Canadian_Air_Force_Badge.svg.e36b4738.png",
+    "static/media/logo.6ce24c58.svg": "/app/static/media/logo.6ce24c58.svg",
+    "static/media/miovision-technologies-inc-_logo_201806041618418.a9ee9c31.png": "/app/static/media/miovision-technologies-inc-_logo_201806041618418.a9ee9c31.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a3358274.js",
+    "static/js/2.b9773a32.chunk.js",
+    "static/css/main.40d8daf6.chunk.css",
+    "static/js/main.bb7c80a6.chunk.js"
+  ]
+}
